@@ -211,31 +211,32 @@ main {
   text-align: right;
 }
 
-#enviar-mail {
-  height: 50vh;
-  max-width: 45vw;
-  margin-top: 255px;
-  margin-bottom: 20px;
-  position: relative;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  background-color: red;
-}
-
-#enviar {
+.formulario {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  margin-top: 210px;
+}
+
+.recuadro {
+  height: 60vh;
+  width: 45%;
+  margin-bottom: 20px;
+  background-color: sandybrown;
+}
+
+#enviar-mail {
+  height: 60vh;
+  width: 45%;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #enviar div {
@@ -243,11 +244,20 @@ main {
 }
 
 #enviar label, #enviar input {
-  width: 40vw;
+  width: 38vw;
   height: 5vh;
+  display: inline-block;
 }
 
 #enviar #mensaje input {
   height: 15vh;
+}
+
+#enviar .enviarbtn {
+  background-color: rosybrown;
+}
+
+#enviar .enviarbtn #color {
+  background-color: royalblue;
 }
 /*# sourceMappingURL=style.css.map */
