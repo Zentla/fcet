@@ -210,4 +210,44 @@ main {
 .parrafo-cinco .tprf p {
   text-align: right;
 }
+
+#enviar-mail {
+  height: 50vh;
+  max-width: 45vw;
+  margin-top: 255px;
+  margin-bottom: 20px;
+  position: relative;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-color: red;
+}
+
+#enviar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#enviar div {
+  margin: 20px;
+}
+
+#enviar label, #enviar input {
+  width: 40vw;
+  height: 5vh;
+}
+
+#enviar #mensaje input {
+  height: 15vh;
+}
 /*# sourceMappingURL=style.css.map */
