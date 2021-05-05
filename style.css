@@ -74,6 +74,12 @@ main {
   position: relative;
 }
 
+#animado {
+  opacity: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
 .parrafo-dos {
   position: relative;
   display: -webkit-box;
