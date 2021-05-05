@@ -228,3 +228,30 @@ margin-bottom: 30px;
     } 
 }
 }
+
+//amigas
+
+.slider-css{
+    display: flex;
+    justify-content: space-around;
+    .slider{
+        margin-top: 210px;
+        position: relative;
+        display:flex;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        background-color: green;
+        max-width: 500px;
+        height: 300px;
+        width: 100%;
+        img{
+            position:relative;
+            width: 100%;
+            object-fit: cover;
+            scroll-snap-align: center;
+            margin-left: 20px;
+        }
+    }
+    
+
+}

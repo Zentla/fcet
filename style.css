@@ -266,4 +266,36 @@ main {
 #enviar .enviarbtn #color {
   background-color: royalblue;
 }
+
+.slider-css {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.slider-css .slider {
+  margin-top: 210px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  background-color: green;
+  max-width: 500px;
+  height: 300px;
+  width: 100%;
+}
+
+.slider-css .slider img {
+  position: relative;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  scroll-snap-align: center;
+  margin-left: 20px;
+}
 /*# sourceMappingURL=style.css.map */

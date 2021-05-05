@@ -3,12 +3,12 @@ let animado = document.querySelectorAll('#animado');
 
 
 //eventlistener
-
+window.addEventListener('scroll', mostrarScroll);
 
 //funciones
 function mostrarScroll() {
     let scrollTop = document.documentElement.scrollTop;
-    
+
     for ( var i=0; i < animado.length; i++ ){
         let alturaAnimado = animado[i].offsetTop;
         if (alturaAnimado < scrollTop) {
@@ -17,6 +17,6 @@ function mostrarScroll() {
     }
 };
 
-window.addEventListener('scroll', mostrarScroll);
+
 
 
