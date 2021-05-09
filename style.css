@@ -82,7 +82,7 @@ img {
   min-width: 60%;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 768px) {
   img {
     min-width: 80%;
   }
@@ -114,6 +114,13 @@ main {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+  .imagen-centro {
+    width: 30%;
+    min-width: 60%;
+  }
 }
 
 .parrafo-principal {
@@ -275,7 +282,7 @@ main {
           justify-content: space-between;
   -ms-flex-line-pack: justify;
       align-content: space-between;
-  margin-top: 210px;
+  margin-top: 20%;
 }
 
 .recuadro {
@@ -322,10 +329,10 @@ main {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-top: 23%;
 }
 
 .slider-css .slider {
-  margin-top: 210px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
