@@ -9,7 +9,7 @@
 body{
     color:#E8E8E8;
     background: rgb(20,20,20);
-background: linear-gradient(90deg, rgba(20,20,20,1) 0%, rgba(61,61,61,1) 47%, rgba(20,20,20,1) 100%);
+    background: linear-gradient(90deg, rgba(20,20,20,1) 0%, rgba(61,61,61,1) 47%, rgba(20,20,20,1) 100%);
 }
 
 header{
@@ -19,7 +19,6 @@ header{
         display: none;
         &:checked ~ nav {
             margin: 0;
-            
         }
     }
 
@@ -40,7 +39,6 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    // background-color: yellow;
     
     a{
         text-decoration: none;
@@ -222,7 +220,6 @@ margin-bottom: 30px;
     display: flex;
     justify-content:space-between;
     align-content: space-between;
-    // background-color: sienna;
     margin-top: 20%;
     }
 
@@ -238,15 +235,10 @@ margin-bottom: 30px;
     height: 60vh;
     width: 45%;
     margin-bottom: 20px;
-    // background-color: red;
     display: flex;
 }
 
 #enviar{
-    // display: flex;
-    // justify-content:space-between;
-    // flex-direction: column;
-    // align-items: flex-end;
     div{
         margin: 20px;
 
@@ -295,5 +287,32 @@ margin-bottom: 30px;
     }
     
 }
+
+//Números
+
+.cards{
+    position: relative;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 25%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    .coloreado{
+        text-align: center;
+        background-color: green;
+        padding: 80px;
+        margin: 10px;
+        
+    @media screen and (max-width: 480px) {
+        width: 20%;
+        min-width: 40%;
+        margin: 10px;
+    }
+    }
+
+}
+
+
 
 

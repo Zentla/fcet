@@ -354,4 +354,38 @@ main {
   scroll-snap-align: center;
   margin-left: 20px;
 }
+
+.cards {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 25%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.cards .coloreado {
+  text-align: center;
+  background-color: green;
+  padding: 80px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .cards .coloreado {
+    width: 20%;
+    min-width: 40%;
+    margin: 10px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
