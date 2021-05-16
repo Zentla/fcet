@@ -369,6 +369,8 @@ main {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-item-align: center;
+      align-self: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -379,6 +381,9 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-flex: 1 0 auto;
+      -ms-flex-positive: 1 0 auto;
+          flex-grow: 1 0 auto;
 }
 
 .cards p {
@@ -388,8 +393,16 @@ main {
 .cards .coloreado {
   text-align: center;
   background-color: green;
-  padding: 70px;
-  margin: 10px;
+  padding: 60px;
+}
+
+@media screen and (max-width: 480px) {
+  .cards .coloreado {
+    width: 20%;
+    min-width: 40%;
+    margin: 10px;
+    background-color: greenyellow;
+  }
 }
 
 .cards .coloreado:hover > .capa {
@@ -403,17 +416,16 @@ main {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-color: hotpink;
-  padding: 70px;
+  padding: 80px;
   position: absolute;
   display: block;
-  -webkit-transform: translate(-33%, -55%);
-          transform: translate(-33%, -55%);
+  -webkit-transform: translate(-30%, -55%);
+          transform: translate(-30%, -55%);
 }
 
 .capa {
   background-image: url(/images/descarga-directa.png);
   background-position: center;
-  background-size: 70%;
   background-repeat: no-repeat;
   visibility: hidden;
   opacity: 0;

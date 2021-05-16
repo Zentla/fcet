@@ -288,24 +288,29 @@ main {
   position: relative;
   display: flex;
   justify-content: space-around;
+  align-self: center;
   align-items: center;
   margin-top: 25%;
   flex-wrap: wrap;
   flex-direction: row;
+  flex-grow: 1 0 auto;
   p {
     text-align: center;
   }
   .coloreado {
     text-align: center;
     background-color: green;
-    padding: 70px;
-    margin: 10px;
+    padding: 60px;
+    
 
-    // @media screen and (max-width: 480px) {
-    //     width: 20%;
-    //     min-width: 40%;
-    //     margin: 10px;
-    //     background-color: greenyellow;
+
+    @media screen and (max-width: 480px) {
+        width: 20%;
+        min-width: 40%;
+        margin: 10px;
+        background-color: greenyellow;
+    }
+
     &:hover > .capa {
       background-image: url(/images/descarga-directa.png);
       background-position: center;
@@ -316,13 +321,11 @@ main {
       text-align: center;
       transition: all 0.3s;
       background-color: hotpink;
-      padding: 70px;
-      // margin: auto;
-      // top: 0;
+      padding: 80px;
+    //   margin: auto;
       position: absolute;
       display: block;
-      transform: translate(-33%, -55%);
-      // left: 35px;
+      transform: translate(-30%, -55%);
     }
   }
 }
@@ -330,7 +333,7 @@ main {
 .capa {
   background-image: url(/images/descarga-directa.png);
   background-position: center;
-  background-size: 70%;
+//   background-size: 30%;
   background-repeat: no-repeat;
   visibility: hidden;
   opacity: 0;
